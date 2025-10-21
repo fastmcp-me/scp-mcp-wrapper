@@ -1,0 +1,21 @@
+{
+    "manifest_version": "0.2",
+    "name": "shopper-context-protocol",
+    "version": "1.0.0",
+    "display_name": "Shopper Context Protocol",
+    "description": "Model Context Protocol server for Shopper Context Protocol",
+  
+    "author": {
+      "name": "Matt Howland"
+    },
+    "server": {
+      "type": "node",
+      "entry_point": "dist/index.js",
+      "mcp_config": {
+        "command": "node",
+        "args": ["${__dirname}/dist/index.js"]
+        
+      }
+    }
+  }
+  

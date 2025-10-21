@@ -1,0 +1,39 @@
+{
+  "name": "@shoppercontextprotocol/local-mcp-server",
+  "version": "0.1.0",
+  "description": "Local MCP server for Shopper Context Protocol",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "scp-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "node --test",
+    "clean": "rm -rf dist",
+    "pack": "npm run build && npx @anthropic-ai/mcpb pack"
+  },
+  "keywords": [
+    "scp",
+    "mcp",
+    "shopper-context-protocol",
+    "model-context-protocol"
+  ],
+  "author": "SCP Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "sql.js": "^1.13.0"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "latest",
+    "@types/node": "^22.0.0",
+    "@types/sql.js": "^1.4.9",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
